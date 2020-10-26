@@ -13,17 +13,25 @@
     <!--Header with name-->
     <header>
       <h1>Andrew Rametta</h1>
-      <h3>Software Developer</h3>
+      <!--nav-->
+      <nav>
+        <ul id='menu'>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
     <!--Intro-->
-      <section>
+      <section id="home" class="intro">
         <div class="group">
           <div class="item">
             <h2>Thanks for stopping by!</h2>
-            <p>Allow myself to introduce…myself. Hi, I am Andrew Rametta. I am a new software developer living in Tampa, FL. I spent the first part of my career in the nonprofit world and my main motivator is still helping make people’s lives better.</p>
-            <p>I am looking for a great organization with a great team to join. I bring a unique perspective and a fresh eye. My favorite thing about software development is knowing I will never know everything. I am a life long learner and it excites me to know that learning is a part of the job.</p>
+            <p>Hi, I am Andrew Rametta. I am a new software developer living in Tampa, FL. I spent the first part of my career in the nonprofit world and my main motivator is still helping make people’s lives better.</p>
+            <p>I am looking for a great team to join. I bring a unique perspective through my experiences in the nonprofit world. My favorite thing about software development is knowing I will never know everything. I am a life long learner and it excites me to know that learning is a part of the job.</p>
           </div>
 
           <div class="item">
@@ -33,7 +41,7 @@
 
       </section>
       <!--About me-->
-      <section class="background">
+      <section id="about" class="background">
         <div class="group">
           <div class="item">
             <img src="yoga-mat.jpg" alt="yoga mats in cubbies" width="400" class="yoga-mat">
@@ -41,16 +49,16 @@
 
           <div class="item item-double">
             <h2>A little about me...</h2>
-            <p>I became a software developer because I wanted a career that require me to use my brain everyday. I enjoy solving problems and difficult challenges. I like getting suck because I know with each failure there is a learning that will stick. I enjoy working with others and truly believe that 2 heads are better then 1. (Well, most of the time) I think having a diverse group of people with vastly different perspectives make for the most creative teams with the greatest results.</p>
-            <p>When I’m not coding I am usually sweating in a small hot dark room without a computer. Yoga is one thing I can’t go a day without. Another thing I can’t go a day without is reading <i>Goodnight Moon</i> for the 15th time to my 16 month son. The kitchen is my favorite room in the house. I often spend an evening opening up the fridge and pretending I competing on an episode of Chopped.</p> 
+            <p>I became a software developer because I wanted a career that required me to use my brain everyday. I enjoy solving problems and difficult challenges. I enjoy working with others and truly believe that 2 heads are better then 1. (Well, most of the time) I think having a diverse group of people with vastly different perspectives makes for the most creative teams with the greatest results.</p>
+            <p>When I’m not coding I am usually sweating in a small hot dark room... doing yoga. I can’t go a day without reading <i>Goodnight Moon</i> to my 16 month son atleast 5 times in a row. The kitchen is my favorite room in the house. I like to open up my fridge and pretending I am competing on an episode of Chopped.</p> 
           </div> 
 
         </div> 
       </section>
       <!--Portfolio-->
-      <section>
+      <section id="portfolio">
         <h2 class="portfolio">Portfolio</h2>
-        <div class="group">
+        <div class="group-projects">
           <div class="item">
             <img src="under-construction.jpeg" alt="under contruction sign" width="400">
             <h3>Project 1</h3>
@@ -59,33 +67,54 @@
           <div class="item">
             <img src="under-construction.jpeg" alt="under contruction sign" width="400">
             <h3>Project 2</h3>
-            <p>This is a description of Project 1 I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.
+            <p>This is a description of Project 2 I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.
           </div>
         </div>
-        <div class="group">
+        <div class="group-projects">
           <div class="item">
             <img src="under-construction.jpeg" alt="under contruction sign" width="400">
             <h3>Project 3</h3>
-            <p>This is a description of Project 1 I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.
+            <p>This is a description of Project 3 I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.
           </div>
           <div class="item">
             <img src="under-construction.jpeg" alt="under contruction sign" width="400">
             <h3>Project 4</h3>
-            <p>This is a description of Project 1 I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.
+            <p>This is a description of Project 4 I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.
           </div>
         </div>
       </section>
+      <!-- contact form-->  
+      <section id="contact" class="contact-form"> 
+        <h2 class="contact-form-h2">Contact me</h2>
+        <div class="group">
+            <div class="item">
+              <form action="https://formspree.io/f/mknprken" method="POST">
+                <lable for="user-name">Your name:</lable>
+                <input id="user-name" type="text" name="name">
+                <lable for="user-email">Your email:</lable>
+                <input id="user-email" type="text" name="email">
+                <lable for="user-message">Type message here:</labe>
+                <textarea id="user-message" name="message"></textarea>
+                <button type="submit">Send message</button>
+              </form>
+            </div>
+            <div class="item">
+              <img src="good.vibes.jpeg" alt="Good vibes sign on the sidewalk">
+            </div>
+        </div>
+      </section>
+
         <!--Contact footer-->
         <footer>
-        <h2>Contact me</h2>
-        <div class="group">
-          <div class="item">
+        <h2>Lets connect</h2>
+        <div class="footer-group">
+          <div class="footer-item">
             <a href="https://www.linkedin.com/in/andrew-rametta-73608510a/" target="_blank">LinkedIn</a>
           </div>
-          <div class="item">
+          <div class="footer-item">
             <a href="https://github.com/andrewrametta" target="_blank">GitHub</a>
           </div>
-          <div class="item">
+          <div class="footer-item">
             <a href="malito: ramettaandrewj@gmail.com">Send Email</a>
           </div> 
         </div>

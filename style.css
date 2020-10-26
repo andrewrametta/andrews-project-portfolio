@@ -12,37 +12,79 @@ html,body
 header {
   background-image: url("coding-header.jpg");
   background-size: cover;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: -40px;
-  height: 200px;
+  height: 150px;
 }
 
 
-h1 {
+header h1 {
   color: white;
-  text-align: right;
-  padding-right: 50px;
-  padding-top: 20px;
   font-size: 48px;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: -15px;
 }
 
-header h3 {
-  color: rgb(66, 221, 241); 
-  text-align: right;
-  padding-right: 100px;
-  font-size: 32px;
-  margin: -40px;
+/*mobile nav display*/
+
+header nav {
+  display: flex;
+  justify-content: center;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 20px;
 }
+
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+header nav ul li a {
+  color: rgb(28, 233, 196);
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+/*  Desktop view  */
+
+@media all and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h1 {
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 42px;
+  }
+  
+  header nav {
+    margin-top: 14px;
+  }
+  header ul {
+    margin-top: 50px;
+    font-size: 28px;
+  }
+}
+
+
 
 main {
-  padding: 20px 0;
+  padding-top: 10px;
 }
 
 main h2 {
   font-family: Arial, Helvetica, sans-serif;
 }
+
 
 p {
   font-size: 20px;
@@ -91,10 +133,14 @@ img {
   text-align: center;
 }
 
+.group-projects {
+  padding: 20px;
+}
+
 /* footer for mobile */
 
 footer {
-  height: 250px;
+  height: 75px;
   background: rgb(124, 80, 243);
   margin-bottom: -500px;
   color: white;
@@ -103,7 +149,22 @@ footer {
 
 footer h2 {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
+  margin-bottom: 4px;
+}
+
+.footer-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.footer-item {
+  text-decoration: none;
+  font-size: 20px;
+  
 }
 
 /* media query 
@@ -111,33 +172,63 @@ Desktop
 */
 @media all and (min-width: 800px) {
   section {
-    padding: 0 10%;
+    padding: 0 5%;
   }
   .group {
+    flex-direction: row;
+  }
+  .group-projects {
+    display: flex;
     flex-direction: row;
   }
   p {
     font-size: 18px;
   }
-
+.footer-group {
+  justify-content: space-around;
+}
   .yoga-mat {
     margin-top: 25px;
   }
   footer {
-  height: 150px;
+  height: 100px;
   background: rgb(124, 80, 243);
   margin-bottom: -200px;
   color: white;
   margin-top: 20px;
   text-align: center;
-}
+  }
+ 
   footer a {
     font-size: 20px;
   }
 
 }
 
-a:link {color: white}
-a:visited {color: black;}
-a:hover {color:  rgb(66, 221, 241)}
-a:active {color: rgb(46, 2, 88)}
+a:link {color:  rgb(66, 221, 241)}
+a:visited {color: rgb(0, 250, 0)}
+a:hover {color:  white}
+a:active {color:  rgb(14, 146, 164)}
+
+.contact-form-h2 {
+  text-align: center;
+}
+
+form {
+  padding-right: 30px;
+  padding-left: 30px;
+  font-family: Helvetica;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+
+}
+
+form textarea {
+  height: 160px;
+}
+
